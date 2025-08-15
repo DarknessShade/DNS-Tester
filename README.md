@@ -30,7 +30,7 @@
    <img  width="40%"  src="https://github.com/mansor427/mansor427/assets/104245967/15a9fad4-d747-464a-9cf9-e6304e03872d">
 </p>
 
-1.  به [صفحه وب DNS Tester](https://darknessm427.github.io/DNS-Tester/) مراجعه کنید.
+1.  به [صفحه وب DNS Tester](https://darknessshade.github.io/DNS-Tester/) مراجعه کنید.
 2.  روی دکمه **"بررسی سرورها"** کلیک کنید.
 3.  منتظر بمانید تا تست تمام سرورها به پایان برسد.
 4.  لیست نتایج به ترتیب از سریع‌ترین به کندترین سرور مرتب می‌شود و بهترین DNS با یک آیکن ستاره مشخص می‌گردد.
@@ -51,6 +51,6 @@
    <img  width="15%" src="https://github.com/mansor427/IpScanner/assets/104245967/08ccb46c-51a3-4d16-a0a4-27fb7492d35d">
 </p>
 
-[ÐΛɌ₭ᑎΞ𐒡𐒡](https://github.com/darknessm427)
+[ÐΛɌ₭ᑎΞ𐒡𐒡](https://github.com/darknessshade)
 
 [Dia Cl NiREvil](https://github.com/NiREvil)
