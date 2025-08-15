@@ -1,8 +1,8 @@
 <h1 align="center">$$\color{gold} \large \text{DNS Tester | تستر آنلاین DNS}$$</h1>
 
-[![web](https://img.shields.io/badge/Visit-Website-cyan?style=for-the-badge&logo=githubpages)](https://darknessm427.github.io/DNS-Tester/)
-[![Data](https://img.shields.io/badge/Data-DNS-purple?style=for-the-badge&logo=githubpages)](https://github.com/darknessm427/DNS-Tester/blob/main/assets/Data.md)
-[![DOH](https://img.shields.io/badge/All-DOH-orange?style=for-the-badge&logo=githubpages)](https://github.com/darknessm427/DNS-Tester/blob/main/assets/DNS-over-HTTPS.md)
+[![web](https://img.shields.io/badge/Visit-Website-cyan?style=for-the-badge&logo=githubpages)](https://darknessShade.github.io/DNS-Tester/)
+[![Data](https://img.shields.io/badge/Data-DNS-purple?style=for-the-badge&logo=githubpages)](https://github.com/DarknessShade/DNS-Tester/blob/main/Data.md)
+[![DOH](https://img.shields.io/badge/All-DOH-orange?style=for-the-badge&logo=githubpages)](https://github.com/DarknessShade/DNS-Tester/blob/main/DNS-over-HTTPS.md)
 
 ### ابزار آنلاین، سریع و مدرن برای تست و مقایسه سرعت پاسخ‌دهی (Ping) سرورهای DNS مختلف. این پروژه با هدف کمک به کاربران برای یافتن سریع‌ترین و پایدارترین سرور DNS بر اساس موقعیت جغرافیایی و شرایط شبکه آن‌ها، توسعه داده شده است.
 
