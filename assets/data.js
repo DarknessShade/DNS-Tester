@@ -154,6 +154,14 @@ const serverData = {
         ipv4: '223.5.5.5, 223.6.6.6',
         ipv6: '2400:3200::1, 2400:3200:baba::1',
     },
+    'DNS.SB': {
+        url: 'https://doh.dns.sb/dns-query',
+        features: ['سرعت بالا', 'حریم خصوصی واقعی', 'بدون فیلتر', 'پشتیبانی DoH/DoT', 'خارج از ایران'],
+        privacy: 'عالی (بدون لاگ، رمزنگاری قوی، شفافیت)',
+        group: 'جهانی',
+        ipv4: '185.222.222.222, 45.11.45.11',
+        ipv6: '2a09:8840:cf20:9::1, 2a09:8840:cf20:9::2',
+    },
 
     // --- Unfiltered & Standard Performance DNS Providers in Europe ---
     'DNS4EU Unfiltered': {
