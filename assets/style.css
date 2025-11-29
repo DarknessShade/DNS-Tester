@@ -21,21 +21,15 @@ html.dark {
 }
 
 body {
-    font-family: 'Vazirmatn', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-    transition:
-        background-color 0.3s,
-        color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+/* Background Animation */
 .animated-bg {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
     background: linear-gradient(45deg, #0a192f, #133a75, #5a189a, #9d4edd);
     background-size: 400% 400%;
     animation: gradient-animation 15s ease infinite;
@@ -47,27 +41,18 @@ html:not(.dark) .animated-bg {
 }
 
 @keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
+/* Glass Effect */
 .glass-container {
     background: var(--card-bg);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
     border: 1px solid var(--border-color);
-    transition:
-        background-color 0.3s,
-        border-color 0.3s;
+    transition: background-color 0.3s, border-color 0.3s;
     height: calc(100dvh - 2rem);
 }
 
@@ -78,38 +63,23 @@ html:not(.dark) .animated-bg {
     }
 }
 
-.custom-scrollbar::-webkit-scrollbar {
-    width: 5px;
-}
+/* Scrollbar */
+.custom-scrollbar::-webkit-scrollbar { width: 5px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(120, 120, 120, 0.5); border-radius: 10px; }
 
-.custom-scrollbar::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-    background: rgba(120, 120, 120, 0.5);
-    border-radius: 10px;
-}
-
+/* Loader */
 .loader {
-    width: 18px;
-    height: 18px;
+    width: 18px; height: 18px;
     border: 2px solid #6b7280;
     border-top-color: #60a5fa;
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
+@keyframes spin { to { transform: rotate(360deg); } }
 
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.donut-chart-bg {
-    stroke: rgba(120, 120, 120, 0.3);
-}
-
+/* Chart */
+.donut-chart-bg { stroke: rgba(120, 120, 120, 0.3); }
 .donut-chart-fg {
     stroke: #01E391;
     stroke-linecap: round;
@@ -118,11 +88,25 @@ html:not(.dark) .animated-bg {
     transition: stroke-dashoffset 1s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
+/* Items */
 .dns-item-box {
     height: fit-content;
     border: 1px solid var(--item-border-color);
+    background-color: var(--card-bg);
+    background-repeat: no-repeat;
+    transition: background 0.5s ease, opacity 0.5s ease-out;
 }
 
-#share-page {
-    transition: opacity 0.3s ease-in-out;
+/* RTL Support in Gradients */
+[dir="rtl"] .dns-item-box { background-position: right; }
+[dir="ltr"] .dns-item-box { background-position: left; }
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
+
+/* Utilities for Direction */
+[dir="rtl"] .rtl\:mr-2 { margin-right: 0.5rem; }
+[dir="ltr"] .ltr\:ml-2 { margin-left: 0.5rem; }
+[dir="rtl"] .rtl\:rotate-180 { transform: rotate(180deg); }
